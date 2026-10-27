@@ -1,84 +1,58 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-LKPD Sistem Saraf - Beatrix Octaviana Silitonga</title>
+  <title>E-LKPD Interaktif Sistem Saraf - SMAN 11 Medan</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #f0f9ff; color: #0f172a; margin: 0; padding: 20px; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); text-align: center; }
+    .header-logo { display: flex; justify-content: center; gap: 15px; align-items: center; margin-bottom: 15px; }
+    .header-logo img { height: 45px; }
+    h1 { color: #0284c7; font-size: 1.3rem; margin-bottom: 5px; }
+    .author { font-size: 0.85rem; color: #64748b; margin-bottom: 20px; }
+    .menu-card { background: #e0f2fe; border: 2px solid #38bdf8; border-radius: 15px; padding: 15px; margin-bottom: 15px; text-align: left; }
+    .menu-card h3 { margin: 0 0 5px 0; color: #0369a1; font-size: 1rem; }
+    .menu-card p { margin: 0 0 10px 0; font-size: 0.8rem; color: #334155; }
+    .btn-pertemuan { display: inline-block; padding: 8px 16px; background: #0284c7; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 0.8rem; }
+  </style>
 </head>
 <body>
 
-  <!-- Header E-LKPD -->
-  <header class="header-card">
-    <div class="logo-group">
-      <img src="images/unimed.png" alt="Logo UNIMED" class="logo">
-      <span class="divider"></span>
-      <img src="images/tut.png" alt="Logo Kemendikbud" class="logo">
+  <div class="container">
+    <div class="header-logo">
+      <img src="images/unimed.png" alt="Logo UNIMED" onerror="this.style.display='none'">
+      <img src="images/tut.png" alt="Logo Kemendikbud" onerror="this.style.display='none'">
     </div>
 
-    <h1>E-LKPD Interaktif: Sistem Saraf Manusia</h1>
-    <p class="author">Oleh: <strong>Beatrix Octaviana Silitonga</strong> (NIM 4233141016)</p>
-    <p class="school">SMA Negeri 11 Medan &bull; Pendidikan Biologi UNIMED</p>
-    <div class="badge">Fase F &bull; Kelas XI &bull; Biologi</div>
-  </header>
+    <h1>E-LKPD INTERAKTIF: SISTEM SARAF MANUSIA</h1>
+    <p class="author"><strong>Beatrix Octaviana Silitonga</strong> (NIM 4233141016)<br>Pendidikan Biologi UNIMED &bull; SMA Negeri 11 Medan</p>
 
-  <!-- Navigasi Menu E-LKPD -->
-  <main class="menu-grid">
-    <a href="petunjuk.html" class="menu-card">
-      <div class="circle">
-        <img src="images/info.png" alt="Petunjuk">
-        <span class="title">Petunjuk & Tujuan</span>
-        <span class="subtitle">Mindful Learning</span>
-      </div>
-    </a>
+    <!-- CARD PERTEMUAN 1 -->
+    <div class="menu-card">
+      <h3>🧠 Pertemuan 1: Sel Saraf (Neuron) & Impuls</h3>
+      <p>Menganalisis struktur neuron, fungsi bagian sel saraf, dan mekanisme potensial aksi/penghantaran impuls.</p>
+      <a href="pertemuan1.html" class="btn-pertemuan">Mulai Pertemuan 1 ➔</a>
+    </div>
 
-    <a href="materi.html" class="menu-card">
-      <div class="circle">
-        <img src="images/book.png" alt="Orientasi Masalah">
-        <span class="title">Orientasi Masalah</span>
-        <span class="subtitle">Studi Kasus</span>
-      </div>
-    </a>
+    <!-- CARD PERTEMUAN 2 -->
+    <div class="menu-card" style="background: #f0fdf4; border-color: #4ade80;">
+      <h3 style="color: #15803d;">⚡ Pertemuan 2: SSP, SST & Gerak Refleks</h3>
+      <p>Menganalisis susunan Sistem Saraf Pusat (Pusat & Tepi) serta membedakan alur Gerak Sadar dan Gerak Refleks.</p>
+      <a href="pertemuan2.html" class="btn-pertemuan" style="background: #16a34a;">Mulai Pertemuan 2 ➔</a>
+    </div>
 
-    <a href="kegiatan.html" class="menu-card">
-      <div class="circle">
-        <img src="images/task.png" alt="Penyelidikan">
-        <span class="title">Penyelidikan & Diskusi</span>
-        <span class="subtitle">Meaningful Learning</span>
-      </div>
-    </a>
+    <!-- CARD PERTEMUAN 3 -->
+    <div class="menu-card" style="background: #fef2f2; border-color: #f87171;">
+      <h3 style="color: #b91c1c;">💊 Pertemuan 3: Gangguan Saraf & Pola Hidup</h3>
+      <p>Studi kasus komprehensif pengaruh begadang, stres, dan minuman berenergi terhadap kesehatan sistem saraf.</p>
+      <a href="pertemuan3.html" class="btn-pertemuan" style="background: #dc2626;">Mulai Pertemuan 3 ➔</a>
+    </div>
 
-    <a href="evaluasi.html" class="menu-card">
-      <div class="circle">
-        <img src="images/quiz.png" alt="Evaluasi">
-        <span class="title">Evaluasi & Refleksi</span>
-        <span class="subtitle">Joyful & Metakognisi</span>
-      </div>
-    </a>
-  </main>
-
-  <!-- Tombol Utama Mulai Pengerjaan -->
-  <div class="action-container">
-    <a href="petunjuk.html" class="btn-start">
-      Mulai Mengerjakan <span>➜</span>
-    </a>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <strong>E-LKPD Berbasis <em>Problem Based Learning</em> (PBL) dengan <em>Pendekatan Deep Learning</em></strong><br>
-    Materi Sistem Saraf | Biologi Fase F Kelas XI
-  </footer>
-
-  <!-- Karakter Ilustrasi -->
-  <div class="char char-left">
-    <div class="speech-bubble">Halo! Siap belajar sistem saraf hari ini? 🧠</div>
-    <img src="images/guru.png" alt="Karakter Guru">
-  </div>
-
-  <div class="char char-right">
-    <div class="speech-bubble">Yuk, kita analisis kasusnya bersama! 📝</div>
-    <img src="images/siswa.png" alt="Karakter Siswa">
+    <footer style="margin-top:20px; font-size:0.75rem; color:#94a3b8;">
+      E-LKPD Berbasis Problem Based Learning & Deep Learning
+    </footer>
   </div>
 
 </body>
