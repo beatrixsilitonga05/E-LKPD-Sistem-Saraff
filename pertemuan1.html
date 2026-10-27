@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertemuan 1 - E-LKPD Interaktif Sistem Saraf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- HEADER & IDENTITAS UTAMA -->
+    <div class="header">
+      <div class="header-logos">
+        <img src="images/unimed.png" alt="Logo UNIMED" onerror="this.style.display='none'">
+        <img src="images/tut.png" alt="Logo Kemendikbud" onerror="this.style.display='none'">
+      </div>
+      <h1>E-LKPD INTERAKTIF: SISTEM SARAF MANUSIA</h1>
+      <p><strong>Pertemuan 1: Sel Saraf (Neuron) & Impuls</strong></p>
+      <p style="font-size:0.75rem; color:#94a3b8; margin-top:3px;">Beatrix Octaviana Silitonga (NIM 4233141016) &bull; SMAN 11 Medan</p>
+    </div>
+
+    <!-- KATA PENGANTAR & PETUNJUK (MINDFUL LEARNING) -->
+    <div class="card">
+      <div class="card-title">💬 Kata Pengantar & Petunjuk (Mindful Learning)</div>
+      <p style="font-size:0.85rem; line-height:1.5;">
+        Selamat datang di E-LKPD Interaktif Sistem Saraf! Media ini dirancang untuk membantumu memahami bioproses penghantaran impuls secara mendalam melalui studi kasus dan aktivitas interaktif.
+      </p>
+      <div class="mindful-box">
+        <strong>📌 Petunjuk Belajar:</strong>
+        <ol style="margin: 5px 0 0 15px; padding: 0;">
+          <li>Berdoalah dan siapkan kesiapan dirimu sebelum memulai kegiatan.</li>
+          <li>Cermati wacana kasus Dika dan tonton simulasi video dengan fokus.</li>
+          <li>Selesaikan aktivitas Drag & Drop dan jawablah pertanyaan analisis HOTS.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- FASE 1 PBL: ORIENTASI MASALAH -->
+    <div class="card">
+      <div class="card-title">📖 FASE 1 PBL: Orientasi Masalah (Studi Kasus Dika)</div>
+      <div class="case-text">
+        Dika (16 tahun) merasa jari tangannya kaku dan kesemutan setelah mengetik tugas sekolah di laptop selama 4 jam tanpa istirahat. Mengapa stimulasi fisik berupa tekanan tombol keyboard dapat diubah menjadi impuls listrik yang dihantarkan hingga dirasakan oleh otak?
+      </div>
+      
+      <!-- Video Simulasi Embed -->
+      <div class="video-responsive">
+        <!-- Ganti ID YouTube di bawah dengan video simulasi sel saraf pilihanmu -->
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Simulasi Saraf 3D" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- FASE 2 PBL: EKSPLORASI MATERI LENGKAP & DIAGRAM -->
+    <div class="card">
+      <div class="card-title">📚 FASE 2 PBL: Eksplorasi Materi Lengkap</div>
+      <div class="materi-text">
+        <p><strong>Struktur dan Fungsi Neuron:</strong> Sel saraf (neuron) merupakan unit fungsional utama sistem saraf. Neuron terdiri dari tiga bagian utama:</p>
+        <ul>
+          <li><strong>Dendrit:</strong> Penjolan sitoplasma pendek yang berfungsi menerima impuls dari sel saraf lain/reseptor.</li>
+          <li><strong>Badan Sel:</strong> Mengandung inti sel (nukleus) dan sitoplasma untuk memproses rangsangan.</li>
+          <li><strong>Akson (Neurit):</strong> Serabut panjang yang meneruskan impuls dari badan sel menuju sel saraf lain atau efektor. Dilindungi oleh <em>Selubung Mielin</em>.</li>
+        </ul>
+      </div>
+
+      <!-- Diagram Beresolusi Tinggi -->
+      <div class="diagram-container">
+        <!-- Ganti src gambar dengan skema neuron beresolusi tinggi di folder images -->
+        <img src="images/neuron.png" alt="Diagram Struktur Sel Saraf (Neuron)" class="diagram-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/500x250?text=Diagram+Struktur+Neuron+High-Res';">
+        <p style="font-size:0.75rem; color:#64748b; margin-top:5px;"> Diagram Structure Neuron & Celah Sinapsis</p>
+      </div>
+    </div>
+
+    <!-- FASE 3 & 4 PBL: AKTIVITAS INTERAKTIF & ANALISIS HOTS -->
+    <div class="card">
+      <div class="card-title">🧩 FASE 3 & 4 PBL: Penyelidikan Mandiri & Analisis</div>
+      <p style="font-size:0.8rem; color:#475569;"><strong>Aktivitas 1: Drag & Drop Bagian Neuron</strong> (Tarik kata ke kotak target!)</p>
+      
+      <div class="drag-container">
+        <div class="draggable" draggable="true" id="dendrit">Dendrit</div>
+        <div class="draggable" draggable="true" id="akson">Akson (Neurit)</div>
+        <div class="draggable" draggable="true" id="mielin">Selubung Mielin</div>
+      </div>
+
+      <div style="margin-top:10px;">
+        <label style="font-size:0.8rem; font-weight:600;">1. Menerima impuls dari reseptor:</label>
+        <div class="drop-zone" data-accept="dendrit">Geser & Lepaskan Jawaban Di Sini</div>
+
+        <label style="font-size:0.8rem; font-weight:600; margin-top:8px; display:block;">2. Meneruskan impuls menuju efektor:</label>
+        <div class="drop-zone" data-accept="akson">Geser & Lepaskan Jawaban Di Sini</div>
+
+        <label style="font-size:0.8rem; font-weight:600; margin-top:8px; display:block;">3. Mempercepat hantaran impuls (saltatori):</label>
+        <div class="drop-zone" data-accept="mielin">Geser & Lepaskan Jawaban Di Sini</div>
+      </div>
+
+      <div style="margin-top:20px;">
+        <p style="font-size:0.8rem; color:#475569; font-weight:600;">Aktivitas 2: Analisis Berpikir Kritis (Indikator Ennis)</p>
+        <label style="font-size:0.8rem;">Analisislah mengapa kelelahan sel saraf akibat tekanan terus-menerus pada kasus Dika dapat menurunkan kecepatan hantar impuls!</label>
+        <textarea id="jawabanAnalisis" placeholder="Ketikkan argumen analisismu secara rinci di sini..."></textarea>
+      </div>
+    </div>
+
+    <!-- FASE 5 PBL: GAME KUIS EVALUASI & UMPAN BALIK INSTAN -->
+    <div class="card">
+      <div class="card-title">💡 FASE 5 PBL: Evaluasi HOTS & Umpan Balik Instan</div>
+      <p style="font-size:0.85rem; font-weight:500;">
+        <strong>Soal Evaluasi:</strong> Penyakit Multiple Sclerosis merusak selubung mielin secara bertahap. Berdasarkan bioproses saraf, mengapa hal tersebut menyebabkan respon gerakan penderita menjadi sangat lambat?
+      </p>
+      
+      <button class="quiz-opt" onclick="checkQuiz(this, false)">A. Kerusakan mielin menghambat dendrit dalam menerima stimulasi dari luar.</button>
+      <button class="quiz-opt" onclick="checkQuiz(this, true)">B. Impuls tidak dapat melompati Nodus Ranvier secara saltatori, sehingga kecepatan hantar impuls menurun drastis.</button>
+      <button class="quiz-opt" onclick="checkQuiz(this, false)">C. Neurotransmiter tidak dapat diproduksi di dalam badan sel saraf.</button>
+
+      <div id="quizFeedback" class="feedback-box"></div>
+    </div>
+
+    <!-- REFLEKSI METAKOGNISI -->
+    <div class="card">
+      <div class="card-title">🪞 Refleksi Diri (Metakognisi)</div>
+      <label style="font-size:0.8rem;">Tuliskan 1 langkah nyata yang akan kamu lakukan mulai hari ini untuk menjaga kesehatan sistem sarafmu:</label>
+      <textarea id="jawabanRefleksi" style="height:60px;" placeholder="Tuliskan komitmen hidup sehatmu di sini..."></textarea>
+    </div>
+
+    <!-- TOMBOL SIMPAN & PERIKSA NILAI -->
+    <button class="btn-action" onclick="submitEBD()">💾 Simpan & Periksa Nilai Pertemuan 1</button>
+    <div id="finalScore" style="text-align:center; font-weight:bold; margin-top:15px; color:#16a34a;"></div>
+
+    <div style="margin-top:20px; text-align:right;">
+      <a href="pertemuan2.html" class="btn-action" style="background:#64748b; display:inline-block; width:auto; padding:10px 20px;">Lanjut Ke Pertemuan 2 ➔</a>
+    </div>
+
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // --- LOGIKA DRAG AND DROP NATIVE ---
+    const draggables = document.querySelectorAll('.draggable');
+    const dropZones = document.querySelectorAll('.drop-zone');
+
+    draggables.forEach(draggable => {
+      draggable.addEventListener('dragstart', () => draggable.classList.add('dragging'));
+      draggable.addEventListener('dragend', () => draggable.classList.remove('dragging'));
+    });
+
+    dropZones.forEach(zone => {
+      zone.addEventListener('dragover', e => e.preventDefault());
+      zone.addEventListener('drop', e => {
+        e.preventDefault();
+        const dragging = document.querySelector('.dragging');
+        if (dragging) {
+          zone.textContent = dragging.textContent;
+          zone.dataset.userChoice = dragging.id;
+          zone.classList.add('filled');
+        }
+      });
+    });
+
+    // --- LOGIKA KUIS HOTS & UMPAN BALIK INSTAN ---
+    function checkQuiz(btn, isCorrect) {
+      const opts = document.querySelectorAll('.quiz-opt');
+      opts.forEach(o => o.disabled = true);
+      const fb = document.getElementById('quizFeedback');
+      fb.style.display = 'block';
+
+      if (isCorrect) {
+        btn.classList.add('correct');
+        fb.style.background = '#dcfce7';
+        fb.style.color = '#15803d';
+        fb.innerHTML = '<strong>🟢 Jawaban Benar! (Skor: 100)</strong><br>Pembahasan: Selubung mielin memungkinkan penghantaran impuls terjadi secara saltatori (meloncat) antar Nodus Ranvier, sehingga hantarannya jauh lebih cepat daripada akson tanpa mielin.';
+      } else {
+        btn.classList.add('wrong');
+        fb.style.background = '#fee2e2';
+        fb.style.color = '#b91c1c';
+        fb.innerHTML = '<strong>🔴 Jawaban Kurang Tepat!</strong><br>Pembahasan: Mielin berada pada akson, bukan dendrit. Kerusakan mielin menyebabkan hilangnya kemampuan hantar saltatori pada akson.';
+      }
+    }
+
+    // --- LOGIKA PERHITUNGAN SKOR AKHIR ---
+    function submitEBD() {
+      let score = 0;
+      dropZones.forEach(zone => {
+        if (zone.dataset.userChoice === zone.dataset.accept) score += 20;
+      });
+
+      const analisis = document.getElementById('jawabanAnalisis').value.trim();
+      const refleksi = document.getElementById('jawabanRefleksi').value.trim();
+
+      if (analisis.length > 10) score += 30;
+      if (refleksi.length > 5) score += 10;
+
+      const scoreDiv = document.getElementById('finalScore');
+      scoreDiv.innerHTML = `🎉 Pertemuan 1 Selesai!<br>Skor Otomatis Aktivitas: ${score} / 100<br><small style="color:#64748b;">Jawaban analisis dan refleksi telah tersimpan secara otomatis di sistem.</small>`;
+    }
+  </script>
+</body>
+</html>
